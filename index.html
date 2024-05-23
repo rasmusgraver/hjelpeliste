@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hjelpeliste</title>
+
+        <link rel="shortcut icon" href="#" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet" />
+
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+        <link rel="stylesheet" href="style.css" />
+
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+    </head>
+
+    <body>
+        <div class="background-image">
+            <img src="./assets/bg-desktop-dark.jpg" alt="Banner" />
+        </div>
+        <div class="container">
+            <div class="header">
+                <div class="title">HJELPELISTE</div>
+            </div>
+            <br />
+            <div id="instructions">Skriv dere opp på denne listen dersom dere trenger hjelp</div>
+            <div class="new-todo">
+                <div class="check">
+                    <div class="check-mark"></div>
+                </div>
+                <div class="new-todo-input">
+                    <input id="todo-input" type="text" placeholder="Skriv inn ditt navn..." />
+                    <button id="todo-button">Legg til</button>
+                </div>
+            </div>
+            <div class="todo-items-wrapper">
+                <div class="todo-items">
+                    <!-- 
+                    <div class="todo-item">
+                        <div class="check">
+                            <div class="check-mark checked">
+                                <i class="fa fa-check"></i>
+                            </div>
+                        </div>
+                        <div class="todo-text checked">
+                            Elev 1
+                        </div>
+                        <div class="trash">
+                            <div class="trash-mark">
+                                <i class="fa fa-trash"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="todo-item">
+                        <div class="check">
+                            <div class="check-mark">
+
+                            </div>
+                        </div>
+                        <div class="todo-text">
+                            Elev 2
+                        </div>
+                        <div class="trash">
+                            <div class="trash-mark">
+                                <i class="fa fa-trash"></i>
+                            </div>
+                        </div> -->
+                </div>
+            </div>
+            <!-- 
+                <div class="todo-items-info">
+                    <div class="items-left">
+                        X items left
+                    </div>
+                    <div class="items-statuses">
+                        <span class="active">All</span>
+                        <span>Active</span>
+                        <span>Completed</span>
+                    </div>
+                    <div class="items-clear">
+                        <span>Clear Completed</span>
+                    </div>
+                </div>
+          -->
+        </div>
+        <script type="module" src="firebase.js"></script>
+        <script type="module" src="script.js"></script>
+    </body>
+</html>
